@@ -1,6 +1,6 @@
 package com.alleslocker.assaamockrestapi.model
 
 data class User(
-    val person: String,
+    val id: String,
     val role: Role
 )
