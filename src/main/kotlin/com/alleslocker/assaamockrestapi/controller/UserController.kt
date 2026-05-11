@@ -1,5 +1,6 @@
 package com.alleslocker.assaamockrestapi.controller
 
+import com.alleslocker.assaamockrestapi.dto.CreateUserDto
 import com.alleslocker.assaamockrestapi.model.Role
 import com.alleslocker.assaamockrestapi.model.User
 import com.alleslocker.assaamockrestapi.service.UserService
@@ -21,8 +22,8 @@ class UserController(private val service: UserService) {
     }
 
     @PostMapping
-    fun createUser(@RequestBody role: Role): User {
-        return service.createUser(role)
+    fun createUser(@RequestBody dto: CreateUserDto): User {
+        return service.createUser(dto.role)
     }
 
     @GetMapping("/{userId}")
