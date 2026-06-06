@@ -1,5 +1,8 @@
 package com.alleslocker.assaamockrestapi.model
 
+import com.fasterxml.jackson.annotation.JsonInclude
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 data class LockingDevice(
     val id: String,
     val name: String,
