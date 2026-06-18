@@ -13,7 +13,7 @@ class OpenApiConfig {
 
     @Bean
     fun openApi(): OpenAPI = OpenAPI()
-        .info(Info().title("ASSA ABLOY Keyless Administration (Mock)").version("2.15"))
+        .info(Info().title("ASSA AMOCK").version("2.15"))
         .components(
             Components()
                 .addSecuritySchemes(

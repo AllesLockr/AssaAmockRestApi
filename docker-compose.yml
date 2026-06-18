@@ -1,0 +1,15 @@
+services:
+  assa-mock-rest-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: assa-mock-rest-api
+    ports:
+      - "172.17.0.1:8067:8067"
+    volumes:
+      - h2-data:/app
+    restart: unless-stopped
+    network_mode: bridge
+
+volumes:
+  h2-data:
