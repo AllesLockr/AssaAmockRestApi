@@ -1,0 +1,6 @@
+package com.alleslocker.assaamockrestapi.persistence.repository
+
+import com.alleslocker.assaamockrestapi.persistence.entity.LockingDeviceEntity
+import org.springframework.data.repository.ListCrudRepository
+
+interface LockingDeviceRepository : ListCrudRepository<LockingDeviceEntity, String>
